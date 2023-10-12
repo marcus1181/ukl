@@ -1,0 +1,16 @@
+<!--pages/subPack/customIpt/index.wxml-->
+<view class="btn" catchtap="showCode">弹出输入框</view>
+<view class="mask" wx:if="{{show_input}}" catchtap="closeModal"></view>
+<view class="dialog_pop03 flex-column" wx:if="{{show_input}}">
+  <view class="pop03_title">请输入人数:<input class="pop03_text" focus="true" confirm-type="done" maxlength="4" value="{{code}}"
+      bindinput="getCodeValue"/></view>
+  <view class="popo03_tip">(不超过6人)</view>
+    <!-- 输入内容 -->  
+    <!-- input输入框 -->
+    <view class="pop03_btns flex-row ">
+    <view catchtap="closeModal">取消</view>
+    <view catchtap="gotogame">确定</view>
+  </view>
+  </view>
+  
+

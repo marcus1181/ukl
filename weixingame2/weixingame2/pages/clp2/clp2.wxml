@@ -1,0 +1,51 @@
+<!--pages/clp2/clp2.wxml-->
+<view class='boxx'>
+<view  class='zi1'> 筹码数量</view>
+
+<view class="class3">
+  <view wx:for="{{chip}}" wx:key = "index" class = "class4">
+    <text>玩家{{index+1}}：{{item}}</text>
+  </view>
+</view>
+<view class="class2">当前局数为：{{gameno}}/{{gamesum}}</view>
+<view class="class2">当前轮数为：{{round}}/3</view>
+<view class="class2">当前倍率为：{{jiabei}}</view>
+<text class="class2">当前得分：{{fenshu}}\n</text>
+
+<text>投掷区域</text>
+<view class="class0">
+  <block wx:for="{{touzi}}" wx:key="index">
+    <image src="/images/{{item}}.png" class="class1" bind:tap="lockthis" data-nid="{{index}}" style="{{lock[index] ? '' : 'border: 3rpx solid green;'}}"></image>
+  </block>
+</view>
+<view class='box2'>
+<view class="class2"  wx:if="{{count === 0 && !flag1}}">
+  {{peoplenum+1}}选手请投掷!
+</view>
+<view class="class2" wx:if="{{count === 1}}">
+ {{peoplenum+1}}选手请点击骰子来锁定骰子
+</view>
+<view class="class2" wx:if="{{flag1}}" >
+      {{peoplenum+1}}选手请选择倍率！
+    </view>
+</view>
+
+<view class="box1">
+<view clss='box3'>选定区域</view>
+<view class="class0">
+  <block wx:for="{{touzi}}" wx:key="index" wx:if="{{!lock[index]}}">
+    <image src="/images/{{item}}.png" class="class1" bind:tap="lockthis" data-nid="{{index}}" style="{{lock[index] ? '' : 'border: 3rpx solid green;'}}"></image>
+  </block>
+</view></view>
+
+<text class="class2">选择倍率</text>
+<view class="class0">
+  <block wx:for="{{rates}}" wx:key = "index">
+    <button plain="true" class="class1" bind:tap = "jiabei" data-nid="{{index}}" >{{item}}</button>
+  </block>
+</view>
+<view>\n</view>
+<button bind:tap="touzhi"plain="true" >投掷</button>
+<view>\n</view>
+<button bind:tap="queding"plain="true" >完成锁定</button>
+</view>

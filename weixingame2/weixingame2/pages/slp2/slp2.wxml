@@ -1,0 +1,13 @@
+<view class='box1'></view>
+<view class="container">
+  <view class="input-container">
+    
+    <input class="input" type="number" name="sum1" placeholder="请输入初始筹码数" bindinput='getsum1'/>
+    <input class="input" type="number" name="gamesum" placeholder="请输入游戏局数"  bindinput='getgamesum' />
+</view>
+</view>
+<view class="button-container">
+  <button bindtap='jump'class="btn btn-primary btn-rounded">
+   进入游戏
+  </button>
+</view>

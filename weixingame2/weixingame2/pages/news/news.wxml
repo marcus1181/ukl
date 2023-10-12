@@ -1,0 +1,23 @@
+<view>
+<view>投掷区域</view>
+
+  <view class='slp'>
+    <image bindtap="queding" src='{{one_img}}'></image>
+    <image bindtap="queding" src='{{two_img}}'></image>
+    <image bindtap="queding" src='{{three_img}}'></image>
+    <image bindtap="queding" src='{{four_img}}'></image>
+    <image bindtap="queding" src='{{five_img}}'></image>
+  </view>
+
+<view>选定区域</view>
+<view class='slp'>
+    <image bindtap="quxiao" src='{{one_img1}}'></image>
+    <image src='{{two_img2}}'></image>
+    <image src='{{three_img3}}'></image>
+    <image src='{{four_img4}}'></image>
+    <image src='{{five_img5}}'></image>
+  </view>
+<view>当前点数</view>
+</view>
+ <button class='btn' disabled="{{disable1}}"  bindtap='enter'>{{msg}}</button>
+<view>当前次数</view>

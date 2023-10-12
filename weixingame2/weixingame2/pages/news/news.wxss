@@ -1,0 +1,10 @@
+.slp image{
+  width: 50px;
+  height:60px;
+  text-align: center;
+  line-height: 70px;
+}
+.slp{
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/renji/renji",
+    "pages/slp/slp",
+    "pages/clp2/clp2",
+    "pages/clp/clp",
+    "pages/index2/index2",
+    "pages/news/news",
+    "pages/logs/logs",
+    "pages/help/help",
+    "pages/slp2/slp2",
+    "pages/final/final"
+    
+   
+
+    
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

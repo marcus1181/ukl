@@ -1,0 +1,9 @@
+
+<view class="box1">
+      <image class='image1' src="/images/cop1.png" mode=""/>  
+      <image class='image2' src="/images/cop2.png" bindtap="goto2"mode=""/>  
+      <image class='image3' src="/images/cop3.png" bindtap="goto3"mode=""/>  
+      <image class='image4' src="/images/cop4.png" bindtap="goto4"mode=""/>  
+</view>
+
+
