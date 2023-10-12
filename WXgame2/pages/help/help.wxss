@@ -1,0 +1,7 @@
+.box1{
+  width: 100%;
+  height:100%;
+  position:fixed;
+  background-size: cover;
+  background-image:url(https://mp-fd598822-a06b-41bd-b23c-e1adccdd3fe6.cdn.bspapp.com/slp.png) ;
+}

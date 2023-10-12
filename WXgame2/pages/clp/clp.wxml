@@ -1,0 +1,35 @@
+<!--pages/page3/page3.wxml-->
+<view class='c3'><view>当前是第{{(jushu)}}局</view>
+<view>当前轮数：{{(lunshu)}}</view>
+<view>选手分数:{{people[0].fenshu}}  选手筹码:{{sum1}} </view>
+<view>机器分数:{{robot[0].fenshu}}  机器筹码:{{robot[0].chouma}}</view>
+<view>投掷区域</view>
+<view clsss='c1' wx:for="{{people}}" wx:key="id">
+  <text>选手 </text>
+  <block wx:for="{{item.touzi}}" wx:key="index"wx:for-item="cs">
+    <image src="/images/{{cs}}.png" class="img" bind:tap="queding" data-nid="{{index}}" style="{{item.states[index]? '' : 'border: 3px solid red;'}}"></image>
+  </block></view>
+  <view clsss='c1' wx:for="{{robot}}" wx:key="id" >
+  <text>机器 </text>
+  <block wx:for="{{item.touzi}}" wx:key="index"wx:for-item="cs">
+    <image src="/images/{{cs}}.png" class="img" bind:tap="queding" data-nid="{{index}}" style="{{item.states[index]? '' : 'border: 3px solid red;'}}"></image>
+  </block>
+</view>
+
+
+<view>选中区域 </view>
+<view clsss='c1' wx:for="{{people}}" wx:key="id" wx:if="{{index<prr}}">
+  <text>选手 </text>
+  <block wx:for="{{item.touzi}}" wx:key="index"wx:for-item="cs">
+    <image src="/images/{{cs}}.png" class="img" bind:tap="queding" data-nid="{{index}}" style="{{item.states[index]? '' : 'border: 3px solid red;'}}"></image>
+  </block></view>
+  <view clsss='c1' wx:for="{{robot}}" wx:key="id" wx:if="{{index<prr}}">
+  <text>机器 </text>
+  <block wx:for="{{item.touzi}}" wx:key="index"wx:for-item="cs">
+    <image src="/images/{{cs}}.png" class="img"  data-nid="{{index}}" style="{{item.states[index]? '' : 'border: 3px solid red;'}}"></image>
+  </block>
+</view>
+
+
+<button bind:tap="rock">{{msg}}</button>
+<button bind:tap="robotlock">机器锁定</button></view>

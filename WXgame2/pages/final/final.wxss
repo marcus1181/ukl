@@ -1,0 +1,34 @@
+.zi1{
+  justify-content: center;
+  color:white;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  font-size: larger;
+
+}
+.a{
+  width: 100%;
+  height:100%;
+  position:absolute;
+  background-size: cover;
+  font-size: larger;
+  color: white;
+  background-image: url(https://mp-fd598822-a06b-41bd-b23c-e1adccdd3fe6.cdn.bspapp.com/back.png);
+}
+.b{
+   position: absolute;
+   top:700rpx;
+   left:200rpx;
+}
+.class3{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.class4{
+  flex-direction: column;
+  display: flex;
+}

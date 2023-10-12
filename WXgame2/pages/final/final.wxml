@@ -1,0 +1,10 @@
+
+<view class='a'>
+<view  class='zi1'> 玩家筹码数量</view>
+<view class='class3'>
+  <view >
+   玩家剩余筹码数分别是：{{winner}}
+  </view>
+</view>
+<button plain class="b" bindtap='getback'>返回首页</button>
+</view>
